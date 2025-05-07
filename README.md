@@ -10,9 +10,9 @@
 
 | 라이브러리            | 버전 예시         |
 |------------------------|-------------------|
-| React                 | `19.1`            |
-| Vite                  | `6.3.5`             |
-| Tailwind CSS          | `4.1.5`             |
+| React                 | `18.2.0`            |
+| Vite                  | `4.4.0`             |
+| Tailwind CSS          | `3.3.0`             |
 | React Router DOM      | `7.5.3`             |
 | @tanstack/react-query | `5.75.4`             |
 | Zustand               | `5.0.4`             |
