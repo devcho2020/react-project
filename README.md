@@ -44,20 +44,41 @@
     ```bash
     npm install zustand
     ```
+> ⚠️ 버전 수정 시 `npm intall` 실행 필수!
+
+### 🧩 추천 VS Code 확장팩
+
+> 프로젝트 개발에 도움이 되는 확장팩 리스트입니다.
+
+- [**ES7+ React/Redux/React-Native snippets**](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)  
+  React 컴포넌트 템플릿 생성 단축키 (`rafce`, `rfc` 등) 지원
+
+- [**Tailwind CSS IntelliSense**](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)  
+  Tailwind 클래스 자동완성, 실시간 미리보기 제공
+
+- [**Prettier - Code formatter**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)  
+  코드 포맷 자동 정리 및 스타일 일관성 유지
+
+- [**ESLint**](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)  
+  코드 품질 검사, 오류/경고 표시로 버그 방지
+
+- [**Path Intellisense**](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)  
+  import 경로 자동완성 기능 제공
+
+- [**Auto Rename Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)  
+  HTML/JSX 태그를 수정할 때 여는 태그와 닫는 태그를 동시에 변경
+
+- [**Auto Import**](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)  
+  사용한 컴포넌트나 함수가 자동으로 import 되도록 지원
 
 ## 📁 폴더 구조 예시
 ```bash
 src/
 ├── pages/
-│   ├── Home.jsx
-│   └── About.jsx
 ├── components/
-│   └── Header.jsx
 ├── store/
-│   └── userStore.js
 ├── api/
-│   └── queryClient.js
-├── App.jsx
+├── Layout.jsx
 └── main.jsx
 ```
 
@@ -73,17 +94,19 @@ src/
 
 ## 🛠 개발 계획
 
-- [ ] 로그인 / 회원가입 구현
+<!-- 
+- [x] 로그인 / 회원가입 구현
 - [ ] 게시글 CRUD 기능 추가
 - [ ] 반응형 디자인 적용
 - [ ] Dark Mode 기능 추가
-- [ ] 상태 관리 고도화 (Zustand Slice 등)
+- [ ] 상태 관리 고도화 (Zustand Slice 등) 
+-->
 
 ---
 
 ## 🔗 배포 링크
 
-> 👉 [배포 URL 바로가기](https://your-deploy-link.com)
+<!-- > 👉 [배포 URL 바로가기](https://your-deploy-link.com) -->
 
 _(배포 후 링크를 여기에 붙여주세요)_
 

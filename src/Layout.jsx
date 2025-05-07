@@ -1,18 +1,18 @@
+import {Outlet} from 'react-router-dom';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import LeftSide from './components/common/LeftSide';
 import RightSide from './components/common/RightSide';
 
-function App() {
-
+const Layout = () => {
   return (
-    <div className='flex flex-col min-h-screen min-w-screen'>
+    <div className='flex flex-col min-h-screen'>
       <Header />
-      <div className='flex w-full'>
+      <div className='flex w-full flex-1'>
         <LeftSide />
 
-        <main className='flex flex-4'>
-          main
+        <main className='flex-1 bg-blue-100 p-4'>
+          <Outlet />
         </main>
 
         <RightSide />
@@ -22,4 +22,4 @@ function App() {
   )
 }
 
-export default App
+export default Layout;
