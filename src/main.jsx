@@ -7,7 +7,6 @@ import Layout from './Layout';
 import Home from './pages/Home';
 
 import menuJson from './assets/menu.json';
-import { elements } from 'chart.js';
 
 const routesMap = {
   '/' : <Home />
