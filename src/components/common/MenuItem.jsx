@@ -14,7 +14,7 @@ const MenuItem = ({name, path}) => {
   }
 
   return (
-    <div className={`flex items-center space-x-2 cursor-pointer p-2 rounded-lg ${menuClass}`} onClick={isMenu && (() => goUrl(path))}>
+    <div className={`flex items-center cursor-pointer p-2 rounded-lg ${menuClass}`} onClick={isMenu ? () => goUrl(path) : undefined}>
         <span>{name}</span>
     </div>
   )

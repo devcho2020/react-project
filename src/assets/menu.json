@@ -5,7 +5,6 @@
     },
     {
         "name" : "메뉴1",
-        "path" : "",
         "subMenuItems" : [
             { "name" : "sub1", "path" : "/menu1/sub1" },
             { "name" : "sub2", "path" : "/menu1/sub2" }
