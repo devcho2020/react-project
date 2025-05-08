@@ -1,0 +1,21 @@
+[
+    {
+        "name" : "Home",
+        "path" : "/"
+    },
+    {
+        "name" : "메뉴1",
+        "path" : "",
+        "subMenuItems" : [
+            { "name" : "sub1", "path" : "/menu1/sub1" },
+            { "name" : "sub2", "path" : "/menu1/sub2" }
+        ]
+    },
+    {
+        "name" : "메뉴2",
+        "subMenuItems" : [
+            { "name" : "sub1", "path" : "/menu2/sub1" },
+            { "name" : "sub2", "path" : "/menu2/sub2" }
+        ]
+    }
+]
