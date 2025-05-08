@@ -4,10 +4,10 @@
         "path" : "/"
     },
     {
-        "name" : "메뉴1",
+        "name" : "수다존",
         "subMenuItems" : [
-            { "name" : "sub1", "path" : "/menu1/sub1" },
-            { "name" : "sub2", "path" : "/menu1/sub2" }
+            { "name" : "자유게시판", "path" : "/talk/board" },
+            { "name" : "피드백", "path" : "/talk/feedback" }
         ]
     },
     {

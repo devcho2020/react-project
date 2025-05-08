@@ -20,19 +20,19 @@ const LeftSide = () => {
   }, [isLeftSideBarVisible]);
 
   return (
-    <div className='relative'>
-      <button className='absolute mt-2 bg-gray-100 z-50 w-8' onClick={toggleLeftSideBar}>{isLeftSideBarVisible ? '⬅' : '➡'}</button>
+    <div className={`relative`}>
+      <button className='absolute bg-gray-100 z-50 w-10 h-10 -right-10 top-0' onClick={toggleLeftSideBar}>{isLeftSideBarVisible ? '⬅' : '➡'}</button>
 
-      <aside className={`transition-all duration-300 ease-in-out ${isLeftSideBarVisible ? 'opacity-100 translate-x-0 w-[12vw]' : 'opacity-0 -translate-x-full w-0'} bg-gray-100 border-r h-full`}>
+      <aside className={`transition-all duration-100 ease-in-out ${isLeftSideBarVisible ? 'opacity-100 translate-x-0 w-52' : 'opacity-0 -translate-x-full w-0'} bg-gray-100 border-r h-full`}>
         <div className='p-2'>
-          <div className='text-right border-b-2'>MENU</div>
+          <div className='text-center border-b-2 pb-2'>MENU</div>
 
-          <ul className='space-y-4'>
+          <ul className='space-y-4 mt-1'>
             {menuJson.map((item, index) => (
-              <li key={index} className='space-y-2'>
+              <li key={index} className='space-y-1'>
                 <MenuItem name={item.name} path={item.path} />
                 {item.subMenuItems && item.subMenuItems.length > 0 && (
-                  <ul className="pl-6">
+                  <ul className="pl-6 space-y-1">
                     {item.subMenuItems.map((subItem, subIndex) => (
                       <li key={subIndex}>
                         <MenuItem name={subItem.name} path={subItem.path} />

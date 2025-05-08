@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { goUrl } from '../../\butils/navigateUtils';
 
 const MenuItem = ({name, path}) => {
 
@@ -7,14 +8,10 @@ const MenuItem = ({name, path}) => {
   const navigate = useNavigate();
 
   const isMenu = path ? true : false;
-  const menuClass = isMenu ? path === location.pathname ? 'bg-gray-300' : 'hover:bg-gray-300' : '';
-
-  const goUrl = (path) => {
-    navigate(path);
-  }
+  const menuClass = isMenu ? path === location.pathname ? 'bg-gray-300' : 'hover:bg-gray-300 cursor-pointer' : '';
 
   return (
-    <div className={`flex items-center cursor-pointer p-2 rounded-lg ${menuClass}`} onClick={isMenu ? () => goUrl(path) : undefined}>
+    <div className={`flex items-center p-2 rounded-lg ${menuClass}`} onClick={isMenu ? () => goUrl(navigate, path) : undefined}>
         <span>{name}</span>
     </div>
   )
