@@ -74,10 +74,13 @@
 ## 📁 폴더 구조 예시
 ```bash
 src/
-├── pages/
+├── assets/
 ├── components/
+├── context/
+├── images/
+├── pages/
 ├── store/
-├── api/
+├── utils/
 ├── Layout.jsx
 └── main.jsx
 ```

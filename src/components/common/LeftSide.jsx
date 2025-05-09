@@ -23,7 +23,7 @@ const LeftSide = () => {
     <div className={`relative`}>
       <button className='absolute bg-gray-100 z-50 w-10 h-10 -right-10 top-0' onClick={toggleLeftSideBar}>{isLeftSideBarVisible ? '⬅' : '➡'}</button>
 
-      <aside className={`transition-all duration-100 ease-in-out ${isLeftSideBarVisible ? 'opacity-100 translate-x-0 w-52' : 'opacity-0 -translate-x-full w-0'} bg-gray-100 border-r h-full`}>
+      <aside className={`transition-all duration-100 ease-in-out ${isLeftSideBarVisible ? 'opacity-100 translate-x-0 w-52 h-full' : 'opacity-0 -translate-x-full w-0 h-0'} bg-gray-100 border-r`}>
         <div className='p-2'>
           <div className='text-center border-b-2 pb-2'>MENU</div>
 
@@ -35,7 +35,7 @@ const LeftSide = () => {
                   <ul className="pl-6 space-y-1">
                     {item.subMenuItems.map((subItem, subIndex) => (
                       <li key={subIndex}>
-                        <MenuItem name={subItem.name} path={subItem.path} />
+                        <MenuItem name={subItem.name} path={(item.subPath ?? '') + subItem.path} />
                       </li>
                     ))}
                   </ul>
