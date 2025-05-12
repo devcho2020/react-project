@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { goUrl } from '../../\butils/navigateUtils';
+import { goUrl } from '../../utils/navigateUtils';
 import logo from '../../images/logo.png';
 import { useCoinContext } from '../../context/CoinContext';
 

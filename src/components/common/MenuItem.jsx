@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { goUrl } from '../../\butils/navigateUtils';
+import { goUrl } from '../../utils/navigateUtils';
 
 const MenuItem = ({name, path}) => {
 
