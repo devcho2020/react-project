@@ -60,9 +60,12 @@ const Jjangkemppo = () => {
       messageEndRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, [resultMessages]);
-
+  
   return (
     <div>
+      <div>
+
+      </div>
         <div>보유 코인 : {coinValue} / 충전 횟수 : {coinChargeChances}</div>
         <div onClick={() => handleUserSelection(2)}>가위</div>
         <div onClick={() => handleUserSelection(1)}>보자기</div>

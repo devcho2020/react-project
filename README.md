@@ -3,10 +3,17 @@
 <!-- 주석
     미리보기 : Ctrl+Shift+V
 -->
+## 프로젝트 종료
+  기술 스택 변경을 위해 새 프로젝트로 진행
+### 🔄 변경 후 사용할 기술 스택
+  새로 사용할 기술 스택 : **Stack**: React + Vite + Vanilla Extract + React Query + React Router + Recoil + typescript
+### 📌 종료 사유
+  - **Tailwind CSS**: 학습시간에 과하게 투자되는것 같음.
+  - **Recoil**: 대형 프로젝트에서 자주 사용될 것으로 보여 미리 학습하고자함
 
- **Stack**: React + Vite + Tailwind CSS + React Query + React Router + Zustand
 
  ## 📦 기술 스택 버전
+ **Stack**: React + Vite + Tailwind CSS + React Query + React Router + Zustand
 
 | 라이브러리            | 버전 예시         |
 |------------------------|-------------------|

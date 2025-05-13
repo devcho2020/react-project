@@ -17,8 +17,10 @@ export const CoinProvider = ({ children }) => {
     userInfo.userCoin = isNaN(userInfo.userCoin) ? defaultCoinValue : parseInt(userInfo.userCoin);
     userInfo.coinChargeChances = isNaN(userInfo.coinChargeChances) ? defaultCoinChargeChances : parseInt(userInfo.coinChargeChances);
 
-    if(userInfo.userCoin === 0 && dayjs().isAfter(userInfo.coinLastChargedDate, 'day')) {
-        userInfo = userDefaultInfo;
+    if(dayjs().isAfter(userInfo.coinLastChargedDate, 'day')) {
+        if(userInfo.userCoin === 0) userInfo = userDefaultInfo;
+        userInfo.coinChargeChances = defaultCoinChargeChances;
+        userInfo.coinLastChargedDate = dayjs().format('YYYY-MM-DD');
     }
     
     localStorage.setItem('gameWordUserInfo', JSON.stringify(userInfo));
